@@ -1,3 +1,47 @@
 <resources>
-    <string name="app_name">RecyclerViewEx</string>
+<string name="app_name">RecyclerViewEx</string>
+
+<string name="action_settings">Settings</string>
+
+    /**
+    * flowers name */
+
+  <string-array name="names">
+
+<item>Lotus</item>
+<item>Jasmine</item>
+<item>Sunflower</item>
+<item>Rose</item>
+<item>Marigold</item>
+<item>Lily</item>
+  </string-array>
+
+    /**
+    * flowers images */
+
+<string-array name="flowers_pics">
+
+<item>@drawable/lotus</item>
+<item>@drawable/jasmine</item>
+<item>@drawable/sunflower</item>
+<item>@drawable/rose</item>
+<item>@drawable/marigold</item>
+<item>@drawable/lily</item>
+
+</string-array>
+
+    /**
+    * discription */
+
+<string-array name="discription">
+
+<item>Lotus is the national flower of India and has often been called Sacred Lotus.</item>
+<item>The fresh and gorgeous Jasmine flowers are the pride of India.</item>
+<item>Sunflower is the most beautiful flower in India and is known for its fiery bloom.</item>
+<item>Roses are widely used across the world as symbols of love, sympathy or sorrow.</item>
+<item>Marigolds are plants that bear brightly colored blooms.</item>
+<item>The lily is a genus of flowering plant.</item>
+
+</string-array>
+
 </resources>
