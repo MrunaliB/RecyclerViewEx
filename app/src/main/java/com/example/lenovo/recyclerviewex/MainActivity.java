@@ -8,14 +8,12 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.lenovo.recyclerviewex.R.array.flowers_pics;
-
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView recyclerview;
+    private RecyclerView recyclerView;
     private String[] names;
-    private TypedArray flower_pics;
-    private String[] discriptions;
+    private TypedArray flowerPics;
+    private String[] descriptions;
     private List<Member> memberList;
 
     @Override
@@ -25,20 +23,20 @@ public class MainActivity extends AppCompatActivity {
 
 
         names = getResources().getStringArray(R.array.names);
-        flower_pics= getResources().obtainTypedArray(R.array.flowers_pics);
-        discriptions = getResources().getStringArray(R.array.discription);
+        flowerPics = getResources().obtainTypedArray(R.array.flowers_pics);
+        descriptions = getResources().getStringArray(R.array.description);
 
         memberList = new ArrayList<Member>();
         for (int i = 0; i < names.length; i++) {
-            Member member = new Member(names[i], discriptions[i], flower_pics.getResourceId(i, -1));
+            Member member = new Member(names[i], descriptions[i], flowerPics.getResourceId(i, -1));
             memberList.add(member);
         }
 
-        recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
-        recyclerview.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(layoutManager);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(memberList, MainActivity.this);
-        recyclerview.setAdapter(adapter);
+        recyclerView.setAdapter(adapter);
     }
 
 }
